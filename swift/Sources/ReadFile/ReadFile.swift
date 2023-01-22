@@ -13,13 +13,16 @@ public struct ReadFile {
   }
 
   public static func printFileLineByLine(path: String) throws {
-    let fileURL = URL(fileURLWithPath: path)
-
+    // Read file contents into a string
     // Try to remove the try keyword and see what happens
     // The program will not compile if a possible error is not handled
+    let fileURL = URL(fileURLWithPath: path)
     let fileContents = try String(contentsOf: fileURL, encoding: .utf8)
-
-    for line in fileContents.components(separatedBy: "\n") {
+    
+    // Separate the string into lines
+    let lines = fileContents.components(separatedBy: "\n")
+    // Print each line
+    for line in lines {
       print(line)
     }
   }
