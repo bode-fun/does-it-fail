@@ -31,4 +31,5 @@ implementations for reference. You should use the best-practices of the
 language, but try to only use the standard library and keep it simple. Try to
 explain as much as possible in the comments but do not use field specific
 jargon. It sould be understandable for people who are not familiar with the
-language in which the example is written.
+language in which the example is written. Don't be afraid to PR your work in
+progress. I will be happy to help you.
