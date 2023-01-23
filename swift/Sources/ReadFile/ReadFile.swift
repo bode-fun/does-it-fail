@@ -10,9 +10,11 @@ public struct ReadFile {
     // One can either use a do-catch block
     // or mark the function signature of the caller (this method) 
     // with the keyword "throws" (see above).
+    
     // Swift forces one to handle errors.
     // Try to modify the code and see how the compiler reacts.
     // Spoiler: the program will not compile if a possible error is not handled.
+    
     // Try to do the following:
     // 1. Remove the try keyword, compile the program
     // 2. Put it back and remove the do-catch block, compile the program
@@ -37,6 +39,7 @@ public struct ReadFile {
     
     // Read file contents into a string
     let fileURL = URL(fileURLWithPath: path)
+    // Here is a try operator. If an error occurs, this function will propagate it.
     let fileContents = try String(contentsOf: fileURL, encoding: .utf8)
     
     // Separate the string into lines
