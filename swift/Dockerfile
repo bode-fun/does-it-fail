@@ -9,6 +9,6 @@ FROM swift:5.7.3-slim
 
 WORKDIR /app
 COPY ./README.md ./README.md
-COPY --from=builder /usr/src/ReadFile/.build/release/ReadFile .
+COPY --from=builder /usr/src/ReadFile/.build/release/ReadFile /usr/local/bin/ReadFile
 
-CMD ["./ReadFile"]
+ENTRYPOINT [ "ReadFile" ]
