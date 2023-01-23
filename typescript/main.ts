@@ -45,7 +45,7 @@ if (import.meta.main) {
   //    remove the await keyword.
   // 4. Change the code in the printFileLineByLine function
   try {
-    await printFileLineByLine("../README.md");
+    await printFileLineByLine("./README.md");
     // printFileLineByLineSync("../README.md");
   } catch (error: unknown) {
     // Check the type of the error

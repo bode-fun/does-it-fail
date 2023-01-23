@@ -5,8 +5,25 @@ goal is to find out how strict the language is in enforcing error handling.
 
 ## The example
 
-1. Create a program which reads this file and prints it line by line.
+1. Create a program which reads it's local README.md file and prints it line by
+   line.
 2. See how the langugae enfoces you to handle possible errors.
+
+## How to run the examples
+
+1. Install a container runtime like
+   [docker via Rancher Desktop](https://rancherdesktop.io/) (my favourite),
+   [podman](https://podman.io/) or
+   [colima](https://github.com/abiosoft/colima/).
+   1. If you want to use something other than docker, you will have to change
+      the `justfile` to use your container runtime.
+2. Install [just](https://just.systems/).
+3. Run `just run <folder>` to run the example in a container.
+
+## How to run the examples on your machine
+
+- Take a look at the description in the `README.md` of the language you want to
+  run.
 
 ## Implemented languages
 

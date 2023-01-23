@@ -30,7 +30,7 @@ fn main() {
     // is of type Err. If it is, the error is printed to the console.
     // The same will work with Ok.
     // Another way to do this is with pattern matching. Which is done below.
-    if let Err(e) = print_file_line_by_line("../README.md") {
+    if let Err(e) = print_file_line_by_line("./README.md") {
         // Print the error.
         println!("Error: {}", e);
     }
