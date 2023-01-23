@@ -1,10 +1,10 @@
-FROM rust:1.66.1-alpine3.17 AS builder
+FROM --platform=linux/amd64 rust:1.66.1-alpine3.17 AS builder
 
 WORKDIR /usr/src/read_file
 COPY . .
 RUN cargo build --release
 
-FROM ubuntu:22.04
+FROM --platform=linux/amd64 ubuntu:22.04
 COPY --from=builder /usr/src/read_file/target/release/read_file /usr/local/bin/read_file
 
 WORKDIR /app

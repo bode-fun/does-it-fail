@@ -1,4 +1,4 @@
-FROM denoland/deno:ubuntu-1.29.4
+FROM --platform=linux/amd64 denoland/deno:ubuntu-1.29.4
 
 WORKDIR /app
 
