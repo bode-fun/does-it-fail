@@ -1,7 +1,9 @@
 # Does it fail? - A comparison of error handling in different languages
 
 These are small examples to showcase how different languages handle errors. The
-goal is to find out how strict the language is in enforcing error handling.
+goal is to find out how strict the language is in enforcing error handling. This
+is not meant to be a scientific in any way, shape or form. It is just me,
+experimenting with different languages.
 
 ## The example
 
@@ -9,7 +11,7 @@ goal is to find out how strict the language is in enforcing error handling.
    line.
 2. See how the langugae enfoces you to handle possible errors.
 
-## How to run the examples
+### How to run the examples
 
 1. Install a container runtime like
    [docker via Rancher Desktop](https://rancherdesktop.io/) (my favourite),
@@ -20,24 +22,18 @@ goal is to find out how strict the language is in enforcing error handling.
 2. Install [just](https://just.systems/).
 3. Run `just run <folder>` to run the example in a container.
 
-## How to run the examples on your machine
+### How to run the examples on your machine
 
 - Take a look at the description in the `README.md` of the language you want to
   run.
 
-## Implemented languages
-
-- [x] Rust
-- [x] TypeScript (with Deno)
-- [x] Swift
-
 ## Results
 
-| Language   | Enforced error handling |
-| ---------- | ----------------------- |
-| Rust       | ✅                      |
-| TypeScript | ❌                      |
-| Swift      | ✅                      |
+| Language              | Enforced error handling |
+| --------------------- | ----------------------- |
+| Rust                  | ✅                      |
+| TypeScript (via Deno) | ❌                      |
+| Swift                 | ✅                      |
 
 For a deeper explanation, look at the comments in the code.
 
