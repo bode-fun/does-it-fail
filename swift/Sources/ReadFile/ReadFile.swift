@@ -21,7 +21,7 @@ public struct ReadFile {
     // 3. Change the method signature to throws (see above),
     //    remove the do-catch block and compile the program
     do {
-      try printFileLineByLine(path: "../README.md")
+      try printFileLineByLine(path: "./README.md")
     } catch {
       // Print the error
       print("Error: \(error)")
