@@ -4,7 +4,7 @@ WORKDIR /usr/src/read_file
 COPY . .
 RUN cargo build --release
 
-FROM alpine:latest
+FROM ubuntu:22.04
 COPY --from=builder /usr/src/read_file/target/release/read_file /usr/local/bin/read_file
 
 WORKDIR /app
